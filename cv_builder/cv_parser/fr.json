@@ -1,0 +1,116 @@
+{  
+   "home_page_caption":"ACCUEIL",
+   "general":{  
+      "name":"Sami Fakhfakh",
+      "photo":"/static/cv_parser/images/sami.jpg",
+      "caption":"Informations génerales",
+      "title":"ETUDIANT INGENIEUR EN INFORMATIQUE",
+      "website":"sami-fakhfakh.Com",
+      "languages":"Français, Anglais, Arabe",
+      "language_caption":"LANGUES",
+      "mail_caption":"Email",
+      "website_caption":"SITE WEB",
+      "age_caption":"AGE",
+      "age":"23",
+      "adress_caption":"Adresse"
+
+   },
+   "cv":{  
+      "link":"/samifakhfakh.pdf",
+      "caption":"Telecharger CV"
+   },
+   "contact":{  
+      "adress":"2 Rue saint exupéry, Meudon la Forêt (92360)",
+      "mail":"contact@sami-fakhfakh.com",
+      "caption":"Contactez-moi",
+      "send_caption":"Contactez-moi",
+      "kind_caption":"N'hesitez pas a me contacter"
+   },
+   "about":{  
+      "caption":"A propos de moi",
+      "about_me":"Bonjour, je suis Sami Fakhfakh je suis actuellement etudiant en 2 eme année en ingénierie informatique . Je suis particulierement interessé par la science de l'informatique et en particulier du developpement et de la programmation, Je suis doué dans ce domaine dans lequel je passe des heures et des heures devant mon écran afin d’enrichir mes connaissances et de participer à de nombreux projets. Je me concidere comme un passioné et innovateur. Grace aux plusieurs projets que j'ai accompli , j'ai pu développer un esprit d'initiative ainsi qu'une autonomie et une facilité de travail en équipe."
+   },
+   "social_media":{  
+      "caption":"Suivez-moi sur ",
+      "facebook":"https://www.facebook.com/fakhfakh.sami",
+      "github":"https://github.com/sgeektn",
+      "linkedin":"https://www.linkedin.com/in/sami-fakhfakh-49a914b4/",
+      "instagram":"https://www.instagram.com/sgeek/"
+   },
+   "skills":{  
+      "caption":"Compétences",
+      "list":[  
+         {  
+            "skill":"Java",
+            "rate":"90%"
+         },
+         {  
+            "skill":"Linux",
+            "rate":"100%"
+         },
+         {  
+           "skill": "Linux",
+            "rate":"90%"
+         },
+         {  
+            "skill":"Linux",
+            "rate":"90%"
+         },
+         {  
+            "skill":"Linux",
+            "rate":"90%"
+         }
+      ]
+   },
+   "certification":{  
+      "caption":"Certifications",
+      "list":[  
+         {  
+            "title":"Java",
+            "description":"1z0-808",
+            "image":"http://sami-fakhfakh.com/images/project-1.jpg"
+         },
+         {  
+            "title":"Linux Essentials",
+            "description":"010-510",
+            "image":"http://sami-fakhfakh.com/images/project-3.jpg"
+         }
+      ]
+   },
+   "sections":[  
+      {  
+         "caption":"EXPERIENCE",
+         "list":[  
+            {  
+               "date":"AVRIL 2019 - EN COURS",
+               "title":"STAGIAIRE",
+               "label":"Stage - Crystalchain - Paris",
+               "description":"En cours"
+            },
+            {  
+               "date":"AVRIL 2018",
+               "title":"PROJET UNIVERSITAIRE",
+               "label":"PROJET UNIVERSITAIRE - ISTY - VELIZY, FRANCE",
+               "description":"Développement d’un mini système de gestion de fichier sous LINUX\n- C\n- Linux"
+            }
+         ]
+      },
+      {  
+         "caption":"EDUCATION",
+         "list":[  
+            {  
+               "date":"AVRIL 2019 - EN COURS",
+               "title":"STAGIAIRE",
+               "label":"Stage - Crystalchain - Paris",
+               "description":"En cours"
+            },
+            {  
+               "date":"AVRIL 2018",
+               "title":"PROJET UNIVERSITAIRE",
+               "label":"PROJET UNIVERSITAIRE - ISTY - VELIZY, FRANCE",
+               "description":"Développement d’un mini système de gestion de fichier sous LINUX\n- C\n- Linux"
+            }
+         ]
+      }
+   ]
+}
