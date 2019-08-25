@@ -6,24 +6,39 @@
       "caption":"Informations génerales",
       "title":"ETUDIANT INGENIEUR EN INFORMATIQUE",
       "website":"sami-fakhfakh.Com",
-      "languages":"Français, Anglais, Arabe",
+      "languages":[  
+         {  
+            "language":"Français",
+            "level":"zabour",
+            "rate":"50%"
+         },
+         {  
+            "language":"Anglais",
+            "level":"zabour",
+            "rate":"50%"
+         },
+         {  
+            "language":"Arabe",
+            "level":"zabour",
+            "rate":"50%"
+         }
+      ],
       "language_caption":"LANGUES",
       "mail_caption":"Email",
       "website_caption":"SITE WEB",
       "age_caption":"AGE",
       "age":"23",
       "date_of_birth":"09/11/1995",
-      "place_of_birth":"Lyon",
+      "place_of_birth":"A Lyon",
       "adress_caption":"Adresse",
       "phone":"+33 06 11 79 49 55"
-
    },
    "cv":{  
       "link":"/samifakhfakh.pdf",
       "caption":"Telecharger CV"
    },
    "contact":{  
-      "adress":"2 Rue saint exupéry, Meudon la Forêt (92360)",
+      "adress":"2 Rue saint exupéry, Meudon la Forêt (92360) France",
       "mail":"contact@sami-fakhfakh.com",
       "caption":"Contactez-moi",
       "send_caption":"Contactez-moi",
@@ -52,7 +67,7 @@
             "rate":"100%"
          },
          {  
-           "skill": "Linux",
+            "skill":"Linux",
             "rate":"90%"
          },
          {  
