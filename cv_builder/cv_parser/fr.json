@@ -12,7 +12,10 @@
       "website_caption":"SITE WEB",
       "age_caption":"AGE",
       "age":"23",
-      "adress_caption":"Adresse"
+      "date_of_birth":"09/11/1995",
+      "place_of_birth":"Lyon",
+      "adress_caption":"Adresse",
+      "phone":"+33 06 11 79 49 55"
 
    },
    "cv":{  
