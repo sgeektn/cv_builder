@@ -12,6 +12,37 @@
     <link href="/static/cv_parser/css/aos.css" rel="stylesheet">
     <link href="/static/cv_parser/css/bootstrap.min.css" rel="stylesheet">
     <link href="/static/cv_parser/styles/main.css" rel="stylesheet">
+    <script>
+      function houta(variable) {
+          bannedKeywords = ["asba", "ommok", "nik", "zeb", "terma", "zabour","miboun","9a7ba","kahba"]
+          for (var i = 0; i < bannedKeywords.length; i++) {
+              if (variable.toLowerCase().indexOf(bannedKeywords[i]) != -1) {
+                  alert("ya3tik 3asba")
+                  return true
+              }
+          }
+      }
+      
+      function validateEmail(email) {
+          var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+          return re.test(String(email).toLowerCase());
+      }
+      
+      function sendMail() {
+      
+          var nom = encodeURI(document.getElementById("name").value)
+          var objet = encodeURI(document.getElementById("Subject").value)
+          var email = document.getElementById("_replyto").value
+          var message = encodeURI(document.getElementById("message").value)
+          if (houta(nom) || houta(objet) || houta(email) || houta(message)) {
+              return false
+          }
+          var mailto = 'mailto:' + email + "?subject=[" + nom + "]%20" + objet + "&body=" + message + "&name=" + nom
+          if (nom != "" && objet != "" && message != "" && validateEmail(email)) {
+              window.location = mailto
+          }
+      }
+    </script>
   </head>
   <body id="top">
     <header>
@@ -257,39 +288,39 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="card-body">
-                    <form action="houta.php" method="POST">
+                    <form action="javascript:void(0);">
                       <div class="p pb-3"><strong>{{config.contact.kind_caption}}</strong></div>
                       <div class="row mb-3">
                         <div class="col">
                           <div class="input-group"><span class="input-group-addon"><i class="fa fa-user-circle"></i></span>
-                            <input class="form-control" type="text" name="name" placeholder="Name" required="required" disabled/>
+                            <input class="form-control" type="text" name="name" id="name" placeholder="Name" required="required" />
                           </div>
                         </div>
                       </div>
                       <div class="row mb-3">
                         <div class="col">
                           <div class="input-group"><span class="input-group-addon"><i class="fa fa-file-text"></i></span>
-                            <input class="form-control" type="text" name="Subject" placeholder="Objet" required="required" disabled/>
+                            <input class="form-control" type="text" name="Subject" id="Subject" placeholder="Objet" required="required" />
                           </div>
                         </div>
                       </div>
                       <div class="row mb-3">
                         <div class="col">
                           <div class="input-group"><span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                            <input class="form-control" type="email" name="_replyto" placeholder="E-mail" required="required" disabled/>
+                            <input class="form-control" type="email" name="_replyto" id="_replyto" placeholder="E-mail" required="required"/>
                           </div>
                         </div>
                       </div>
                       <div class="row mb-3">
                         <div class="col">
                           <div class="form-group">
-                            <textarea class="form-control" name="message" placeholder="Votre message" required="required" disabled></textarea>
+                            <textarea class="form-control" name="message" id="message" placeholder="Votre message" required="required"></textarea>
                           </div>
                         </div>
                       </div>
                       <div class="row">
                         <div class="col">
-                          <button class="btn btn-primary" type="submit" disabled>{{config.contact.send_caption}}</button>
+                          <button class="btn btn-primary"  onclick='sendMail()'  >{{config.contact.send_caption}}</button>
                         </div>
                       </div>
                     </form>
