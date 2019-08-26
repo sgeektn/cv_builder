@@ -4,6 +4,10 @@ import json
 from motionless import CenterMap
 from urllib import request as req
 import hashlib
+import sys
+import os
+sys.path.insert(0, os.path.dirname(os.path.realpath(__file__)))
+from cv_latex import template
 # Create your views here.
 def index(request,lang="FR"):
 	#template = loader.get_template('cv_parser/index.html')
@@ -38,7 +42,7 @@ def index(request,lang="FR"):
 	hash_of_config = hashlib.md5(hash_of_config).hexdigest()
 
 	if json_cache["pdf_hash"] != hash_of_config:
-		#create_new_cv
+		template.create_template(json_config)
 		
 		json_cache["pdf_hash"] = hash_of_config
 		with open("cv_parser/cache.json","w") as cache_file:

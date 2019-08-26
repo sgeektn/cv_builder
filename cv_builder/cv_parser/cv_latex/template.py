@@ -1,11 +1,13 @@
 import json
+import os
+
 
 def create_template(config):
-	with open("template_auto.tex","w") as template:
+	with open(os.path.dirname(os.path.realpath(__file__))+"/template_auto.tex","w") as template:
 		template.write("\\documentclass[letterpaper]{twentysecondcv}\n")
 		template.write("\\usepackage[utf8]{inputenc}\n")
 
-		template.write("\\profilepic{about-img.jpg} % Profile picture\n")
+		template.write("\\profilepic{image.jpg} % Profile picture\n")
 		template.write("\\cvname{"+config["general"]["name"].upper()+"} % Your name\n")
 		template.write("\\cvjobtitle{\hspace{1.2cm}"+config["general"]["title"]+"}  % Job title/career\n")
 		template.write("\\cvdate{"+config["general"]["date_of_birth"]+" "+config["general"]["place_of_birth"]+"} % Date of birth\n") 
@@ -49,16 +51,31 @@ def create_template(config):
 		template.write("\\section{CURRICULUM VITAE} \n\n")
 		
 		for section in config["sections"]:
-			template.write("\\\\\n\\section{"+section["caption"]+"}\n")
+			template.write("\n\\section{"+section["caption"]+"}\n")
 			template.write("\n")
 			template.write("\\begin{twentyshort}\n")
 			for item in section["list"]:
-				template.write("\\twentyitemshort{"+item["date"]+"}{["+item["title"]+"]"+item["label"]+"\n\\newline\n "+item["description"]+" }\n")
+				template.write("\\twentyitemshort{\\footnotesize "+item["date"]+"}{["+item["title"]+"]"+item["label"]+"\n\\newline\n "+item["description"].replace("\n","\\\\")+" }\n")
 				template.write("\\\\\n")
-			template.write("\\end{twentyshort}\n")
+			template.write("\\end{twentyshort}\n\\\\")
 
-		
+		template.write("\\section{"+config["certification"]["caption"]+"}\n\n")
+
+		template.write("\\begin{twenty}\n")
+
+		for certification in config["certification"]["list"]:
+			template.write("\\twentyitem{"+certification["date"]+"}{"+certification["institution"]+"}{}{"+certification["title"]+" "+certification["description"]+"}\n")
+
+		template.write("\\end{twenty}\n")
+
+
+
 		template.write("\\end{document}\n")
+		template.close()
+
+	os.system(". "+os.path.dirname(os.path.realpath(__file__))+"/compile.sh "+config["general"]["photo"]+" "+config["cv"]["link"])
+
+
 if __name__ == '__main__':
 	with open("../fr.json","r") as file_config:
 		create_template(json.loads(file_config.read()))

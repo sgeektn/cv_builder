@@ -2,7 +2,7 @@
    "home_page_caption":"ACCUEIL",
    "general":{  
       "name":"Sami Fakhfakh",
-      "photo":"/static/cv_parser/images/sami.jpg",
+      "photo":"/static/cv_parser/images/image.jpg",
       "caption":"Informations génerales",
       "title":"ETUDIANT INGENIEUR EN INFORMATIQUE",
       "website":"sami-fakhfakh.Com",
@@ -14,7 +14,7 @@
          },
          {  
             "language":"Anglais",
-            "level":"zabour",
+            "level":"zaboura",
             "rate":"50%"
          },
          {  
@@ -34,7 +34,7 @@
       "phone":"+33 06 11 79 49 55"
    },
    "cv":{  
-      "link":"/samifakhfakh.pdf",
+      "link":"samifakhfakh.pdf",
       "caption":"Telecharger CV"
    },
    "contact":{  
@@ -84,14 +84,18 @@
       "caption":"Certifications",
       "list":[  
          {  
+            "institution":"Oracle",
             "title":"Java",
             "description":"1z0-808",
-            "image":"http://sami-fakhfakh.com/images/project-1.jpg"
+            "image":"http://sami-fakhfakh.com/images/project-1.jpg",
+            "date":"Avril 2017"
          },
          {  
+            "institution":"Linux Professional Institute",
             "title":"Linux Essentials",
             "description":"010-510",
-            "image":"http://sami-fakhfakh.com/images/project-3.jpg"
+            "image":"http://sami-fakhfakh.com/images/project-3.jpg",
+            "date":"Janvier 2017"
          }
       ]
    },
