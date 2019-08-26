@@ -1,4 +1,5 @@
 {  
+   "lang":"fr",
    "home_page_caption":"ACCUEIL",
    "general":{  
       "name":"Sami Fakhfakh",
@@ -9,18 +10,18 @@
       "languages":[  
          {  
             "language":"Français",
-            "level":"zabour",
-            "rate":"50%"
+            "level":"Bilingue DELF B2",
+            "rate":"90%"
          },
          {  
             "language":"Anglais",
-            "level":"zaboura",
-            "rate":"50%"
+            "level":"TOEIC",
+            "rate":"80%"
          },
          {  
             "language":"Arabe",
-            "level":"zabour",
-            "rate":"50%"
+            "level":"Bilingue",
+            "rate":"90%"
          }
       ],
       "language_caption":"LANGUES",
@@ -60,23 +61,43 @@
       "list":[  
          {  
             "skill":"Java",
-            "rate":"90%"
-         },
-         {  
-            "skill":"Linux",
-            "rate":"100%"
+            "rate":"80%"
          },
          {  
             "skill":"Linux",
             "rate":"90%"
          },
          {  
-            "skill":"Linux",
+            "skill":"Python",
+            "rate":"70%"
+         },
+         {  
+            "skill":"Ruby",
+            "rate":"60%"
+         },
+         {  
+            "skill":"C,C++",
+            "rate":"60%"
+         },
+         {  
+            "skill":"Php",
+            "rate":"60%"
+         },
+         {  
+            "skill":"Sql",
             "rate":"90%"
          },
          {  
-            "skill":"Linux",
-            "rate":"90%"
+            "skill":"Javascript",
+            "rate":"70%"
+         },
+         {  
+            "skill":"Docker",
+            "rate":"50%"
+         },
+         {  
+            "skill":"Aws",
+            "rate":"50%"
          }
       ]
    },
@@ -87,50 +108,62 @@
             "institution":"Oracle",
             "title":"Java",
             "description":"1z0-808",
-            "image":"http://sami-fakhfakh.com/images/project-1.jpg",
+            "image":"static/cv_parser/images/project-1.jpg",
             "date":"Avril 2017"
          },
          {  
             "institution":"Linux Professional Institute",
             "title":"Linux Essentials",
             "description":"010-510",
-            "image":"http://sami-fakhfakh.com/images/project-3.jpg",
+            "image":"static/cv_parser/images/project-3.jpg",
             "date":"Janvier 2017"
          }
       ]
    },
    "sections":[  
       {  
-         "caption":"EXPERIENCE",
-         "list":[  
+         "caption":"EDUCATION",
+         "list":[ 
             {  
-               "date":"AVRIL 2019 - EN COURS",
-               "title":"STAGIAIRE",
-               "label":"Stage - Crystalchain - Paris",
-               "description":"En cours"
+               "date":"2017 - Aujourd'hui",
+               "title":"Etudiant ingenieur informatique",
+               "label":"Institut des sciences et techniques des yvelines - France",
+               "description":"Ingénierie des Architectures Technologiques de l'Information et de la Communication."
             },
             {  
-               "date":"AVRIL 2018",
-               "title":"PROJET UNIVERSITAIRE",
-               "label":"PROJET UNIVERSITAIRE - ISTY - VELIZY, FRANCE",
-               "description":"Développement d’un mini système de gestion de fichier sous LINUX\n- C\n- Linux"
+               "date":"2014 - 2017",
+               "title":"Licence fondamentale en informatique",
+               "label":"Faculté des sciences de Sfax - Tunisie",
+               "description":"Licence fondamentale en informatique"
+            },
+            {  
+               "date":"2014",
+               "title":"BACCALAURÉAT",
+               "label":"Lycée Habib Thameur Sfax - Tunisie",
+               "description":"baccalauréat sciences informatiques Mention Bien"
             }
          ]
       },
       {  
-         "caption":"EDUCATION",
+         "caption":"EXPERIENCE",
          "list":[  
-            {  
+             {  
                "date":"AVRIL 2019 - EN COURS",
                "title":"STAGIAIRE",
                "label":"Stage - Crystalchain - Paris",
-               "description":"En cours"
+               "description":"En cours ."
             },
             {  
-               "date":"AVRIL 2018",
-               "title":"PROJET UNIVERSITAIRE",
-               "label":"PROJET UNIVERSITAIRE - ISTY - VELIZY, FRANCE",
-               "description":"Développement d’un mini système de gestion de fichier sous LINUX\n- C\n- Linux"
+               "date":"MARS 2014 - NOV 2018",
+               "title":"Freelance",
+               "label":"Freelance dans upwork",
+               "description":"Ayant du temps libre et assoiffé de savoir je me suis mis au freelance quand j'ai eu mon bac , cette experience m'as permise d'aquerir de nouvelles competances pratiques ."
+            },
+            {  
+               "date":"FEV 2017 - MAI 2017",
+               "title":"STAGIAIRE",
+               "label":"Stage de fin d’etudes - NextPlus - Sfax",
+               "description":"Durant ce stage j'ai pu creer une appplication en Java de détéction et de reconnaisance des plaques d'immatriculation des vehicules en temps réel.\n- Java\n- Python\n- OpenCv"
             }
          ]
       }

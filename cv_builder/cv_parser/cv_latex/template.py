@@ -4,7 +4,10 @@ import os
 
 def create_template(config):
 	with open(os.path.dirname(os.path.realpath(__file__))+"/template_auto.tex","w") as template:
-		template.write("\\documentclass[letterpaper]{twentysecondcv}\n")
+		if config["lang"].lower()=="fr":
+			template.write("\\documentclass[letterpaper]{twentysecondcv_fr}\n")
+		else:
+			template.write("\\documentclass[letterpaper]{twentysecondcv_en}\n")
 		template.write("\\usepackage[utf8]{inputenc}\n")
 
 		template.write("\\profilepic{image.jpg} % Profile picture\n")
