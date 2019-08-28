@@ -166,6 +166,77 @@
                "description":"Durant ce stage j'ai pu creer une appplication en Java de détéction et de reconnaisance des plaques d'immatriculation des vehicules en temps réel.\n- Java\n- Python\n- OpenCv"
             }
          ]
+      },
+      {  
+         "caption":"PROJETS",
+         "list":[
+            {  
+               "date":"MAI 2019 - JUIN 2019",
+               "title":"Projet universitaire NodeJs",
+               "label":"Systéme de gestion des tâches et pense-bête ",
+               "description":"Technologies: NodeJs , Html , css , javascript"
+            },  
+            {  
+               "date":"MAI 2019 - JUIN 2019",
+               "title":"Projet universitaire NodeJs",
+               "label":"Systéme de gestion des tâches et pense-bête ",
+               "description":"Technologies: NodeJs , Html , css , javascript"
+            },  
+            {  
+               "date":"JAN 2019",
+               "title":"Projet freelance - upWork",
+               "label":"Mise en place d’un script d’analyse technique et fondamentale ( Scrapping ) automatique , de décision et de simulation d’options binaires .",
+               "description":"Technologies: Python , Django , Selenium , plotly"
+            },     
+            {  
+               "date":"JUIN 2018 - AOUT 2018",
+               "title":"Projet universitaire Java",
+               "label":"Developpement d’un jeu de dominos et triominos ",
+               "description":"Technologies : Java/Swing ."
+            },    
+            {  
+               "date":"JUIN 2018 - AOUT 2018",
+               "title":"Projet universitaire C",
+               "label":"Developpement d’un mini systeme de gestion de fichier sous LINUX",
+               "description":"- Implementation d’un SGF sur un disque dur virtuel.\n- Developpement d’un ensemble de commandes operant sur un Shell virtuel permettant d’exploiter le SGF cree [C]."
+            },             
+            {  
+               "date":"NOV 2017 - DEC 2017",
+               "title":"Projet universitaire C",
+               "label":"Developpement d’un jeu de dominos et triominos.",
+               "description":"Technologies: C , sdl"
+            },             
+            {  
+               "date":"SEP 2017",
+               "title":"Projet universitaire C",
+               "label":"Developpement d’un jeu de tarot .",
+               "description":"Technologies: C , sdl"
+            },                    
+            {  
+               "date":"FEV 2017 - JUIN 2017",
+               "title":"Projet PFE Java",
+               "label":"Application desktop en Java pour la détection des véhicules avec la reconnaissance des plaques d’immatriculation.",
+               "description":"Technologies: Java, Python, OpenCV, OCR, Machine Learning . "
+            },
+            {  
+               "date":"JAN 2017 - FEV 2017",
+               "title":"Projet freelance - upWork",
+               "label":"Applications (Web, Desktop et Mobile) pour la gestion des reservations et des offres de covoiturage et de colis-voiturage .",
+               "description":"Technologies: Java/Swing, J2EE EJB , Hibernate , Maven , JSP , REST API, MySQL, Git, Python, OCR"
+            },    
+            {  
+               "date":"OCT 2015 - DEC 2015",
+               "title":"Projet universitaire Java/SOAP",
+               "label":"Application de gestion de comptes bancaires",
+               "description":"Exposition des webservices SOAP et leur consom- mation depuis une application Desktop développée en Java pour la gestion des comptes bancaires ."
+            },
+            {  
+               "date":"OCT 2014 - DEC 2014",
+               "title":"Projet universitaire C",
+               "label":"Jeu intellectuel ( Mastermind )",
+               "description":"jeu Mastermind sur la console en C dans le cadre d’un projet academique."
+            }
+         ]
       }
    ]
 }

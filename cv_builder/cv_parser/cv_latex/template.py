@@ -8,6 +8,8 @@ def create_template(config):
 			template.write("\\documentclass[letterpaper]{twentysecondcv_fr}\n")
 		else:
 			template.write("\\documentclass[letterpaper]{twentysecondcv_en}\n")
+		template.write("\\DeclareUnicodeCharacter{0301}{}\n")
+		template.write("\\DeclareUnicodeCharacter{0302}{}\n")
 		template.write("\\usepackage[utf8]{inputenc}\n")
 
 		template.write("\\profilepic{image.jpg} % Profile picture\n")
