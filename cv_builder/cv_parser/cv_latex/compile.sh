@@ -1,10 +1,11 @@
-echo "cd "$(pwd)"/cv_latex\n"
 cd $(pwd)"/cv_parser/cv_latex"
-echo "cd "$(pwd)"/cv_latex\n"
-cp ".."$1 "./image.jpg"
-pdflatex template_auto.tex 
-rm template_auto.out
+cp ".."$1 $(pwd)"/image.jpg"
+echo "cp .."$1 $(pwd)"/image.jpg zeb"
+pdflatex --no-shell-escape template_auto.tex 
 rm template_auto.log
 rm template_auto.aux
+rm template_auto.run.xml
+rm template_auto.bcf
+rm page1sidebar.aux
 mv template_auto.pdf "../static/cv_parser/"$2
 rm "image.jpg"
