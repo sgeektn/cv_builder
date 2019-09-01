@@ -3,85 +3,78 @@ import os
 
 
 def create_template(config):
-	with open(os.path.dirname(os.path.realpath(__file__))+"/template_auto.tex","w") as template:
-		if config["lang"].lower()=="fr":
-			template.write("\\documentclass[letterpaper]{twentysecondcv_fr}\n")
-		else:
-			template.write("\\documentclass[letterpaper]{twentysecondcv_en}\n")
-		template.write("\\DeclareUnicodeCharacter{0301}{}\n")
-		template.write("\\DeclareUnicodeCharacter{0302}{}\n")
-		template.write("\\usepackage[utf8]{inputenc}\n")
-
-		template.write("\\profilepic{image.jpg} % Profile picture\n")
-		template.write("\\cvname{"+config["general"]["name"].upper()+"} % Your name\n")
-		template.write("\\cvjobtitle{\hspace{1.2cm}"+config["general"]["title"]+"}  % Job title/career\n")
-		template.write("\\cvdate{"+config["general"]["date_of_birth"]+" "+config["general"]["place_of_birth"]+"} % Date of birth\n") 
-		template.write("\\cvaddress{")
-		i=0
-		for adress_words in config["contact"]["adress"].split(" "):
-			template.write(adress_words+" ")
-			if i!=0 and (i+1)%4 == 0:
-				template.write("\n\\newline\n")
-			i+=1
-
-		
-		template.write("} \n")
-		template.write("\\cvnumberphone{"+config["general"]["phone"]+"} % Phone number\n")
-		template.write("\\cvmail{"+config["contact"]["mail"]+"} \n")
-		template.write("\\cvsite{"+config["general"]["website"]+"}\n")
-
-		template.write("\\begin{document}\n")
-		template.write("\\aboutme{}\n")
-
-		template.write("\\skills{\n")
-		i=0
+	
+	with open(os.path.dirname(os.path.realpath(__file__))+"/page1sidebar.tex","w") as template:
+		template.write("\\cvsection{"+config["skills"]["caption"]+"}\n")
 		for skill in config["skills"]["list"]:
-			template.write("	{"+skill["skill"]+"/"+str(float(skill["rate"][:-1])*6/100)+"}")
-			if i < len(config["skills"]["list"])-1:
-				template.write(",\n")
-			i+=1
-		template.write("}\n")
+			template.write("\\cvskill{%s}{%s}\n"%(skill["skill"],str(int(float(skill["rate"][:-1])*5/100))))
 
-		template.write("\\skillss{\n")
-		i=0
-		for skill in config["general"]["languages"]:
-			template.write("	{"+skill["language"]+" "+skill["level"]+"/"+str(float(skill["rate"][:-1])*6/100)+"}")
-			if i < len(config["skills"]["list"])-1:
-				template.write(",\n")
-			i+=1
-		template.write("}\n")
+		template.write("\\cvsection{"+config["certification"]["caption"]+"}\n")
+		template.write("\\begin{itemize}\n")
+		for certif in config["certification"]["list"]:
+			template.write("\\item %s %s ( %s )\n"%(certif["title"],certif["description"],certif["institution"]))
+		template.write("\\end{itemize}\n")
 
+		template.write("\\cvsection{"+config["general"]["language_caption"]+"}\n")
+		for language in config["general"]["languages"]:
+			template.write("\\cvskill{%s}{%s}\n"%(language["language"]+" "+language["level"],str(int(float(language["rate"][:-1])*5/100))))
 
-		template.write("\\makeprofile \n")
-		template.write("\\section{CURRICULUM VITAE} \n\n")
-		
-		for section in config["sections"]:
-			template.write("\n\\section{"+section["caption"]+"}\n")
-			template.write("\n")
-			template.write("\\begin{twentyshort}\n")
-			for item in section["list"]:
-				template.write("\\twentyitemshort{\\footnotesize "+item["date"]+"}{["+item["title"]+"]"+item["label"]+"\n\\newline\n "+item["description"].replace("\n","\\\\")+" }\n")
-				template.write("\\\\\n")
-			template.write("\\end{twentyshort}\n\\\\")
-
-		template.write("\\section{"+config["certification"]["caption"]+"}\n\n")
-
-		template.write("\\begin{twenty}\n")
-
-		for certification in config["certification"]["list"]:
-			template.write("\\twentyitem{"+certification["date"]+"}{"+certification["institution"]+"}{}{"+certification["title"]+" "+certification["description"]+"}\n")
-
-		template.write("\\end{twenty}\n")
-
-
-
-		template.write("\\end{document}\n")
 		template.close()
 
-	os.system(". "+os.path.dirname(os.path.realpath(__file__))+"/compile.sh "+config["general"]["photo"]+" "+config["cv"]["link"])
+	with open(os.path.dirname(os.path.realpath(__file__))+"/template_auto.tex","w") as template:
 
+		template.write("\\documentclass[10pt,a4paper]{altacv}\n")
+		template.write("\\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1cm,bottom=1cm}\n")
+		template.write("\\usepackage[utf8]{inputenc}\n")
+		template.write("\\usepackage[T1]{fontenc}\n")
+		template.write("\\usepackage[default]{lato}\n")
+		template.write("\n")
+		template.write("\\definecolor{VividPurple}{HTML}{2E64FE}\n")
+		template.write("\\definecolor{SlateGrey}{HTML}{2E2E2E}\n")
+		template.write("\\definecolor{LightGrey}{HTML}{666666}\n")
+		template.write("\\colorlet{heading}{VividPurple}\n")
+		template.write("\\colorlet{accent}{VividPurple}\n")
+		template.write("\\colorlet{emphasis}{SlateGrey}\n")
+		template.write("\\colorlet{body}{LightGrey}\n")
+		template.write("\n")
+		template.write("\\renewcommand{\\itemmarker}{{\\small\\textbullet}}\n")
+		template.write("\\renewcommand{\\ratingmarker}{\\faCircle}\n")
+		template.write("\n")
+		template.write("\\DeclareUnicodeCharacter{0301}{}\n")
+		template.write("\\DeclareUnicodeCharacter{0302}{}\n")
+		template.write("\\begin{document}\n")	
+		template.write("\\name{%s}\n"%(config["general"]["name"],))	
+		template.write("\\tagline{%s}\n"%(config["general"]["title"],))	
+		template.write("\\photo{3cm}{image}\n")
+		template.write("\\personalinfo{\n")
+		template.write("	\\email{%s}\n"%(config["contact"]["mail"],))
+		template.write("	\\homepage{%s}\n"%(config["general"]["website"],))
+		template.write("	\\phone{%s}\n"%(config["general"]["phone"],))
+		template.write("	\\location{%s}\n"%(config["contact"]["adress"],))
+		template.write("	\\dob{%s %s}\n"%(config["general"]["date_of_birth"],config["general"]["place_of_birth"]))
+		template.write("}\n")
+		template.write("\\begin{adjustwidth}{}{-8cm}\n")
+		template.write("\\makecvheader\n")
+		template.write("\\end{adjustwidth}\n")
+		##todo make it fit with new pages
+		template.write("\\marginpar{\\vspace*{\\dimexpr1pt-\\baselineskip}\\raggedright\\include{page1sidebar}}\n")
+
+		for section in config["sections"]:
+			template.write("\\cvsection{%s}\n"%(section["caption"],))
+			for section_item in section["list"]:
+				template.write("\\cvevent{}{%s | %s }{%s} {}\n"%(section_item["title"],section_item["label"],section_item["date"]))
+				template.write("\\begin{itemize}\n")
+				template.write("	\\item "+section_item["description"].replace("\n","\\\\")+" \n")
+				template.write("\\end{itemize}\n")	
+		template.write("\\end{document}\n")			
+		template.close()
+
+
+	os.system(". "+os.path.dirname(os.path.realpath(__file__))+"/compile.sh "+config["general"]["photo"]+" "+config["cv"]["link"])
 
 if __name__ == '__main__':
 	with open("../fr.json","r") as file_config:
 		create_template(json.loads(file_config.read()))
 		file_config.close()
+
+	
