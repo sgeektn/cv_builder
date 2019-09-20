@@ -2,7 +2,7 @@
    "lang":"fr",
    "home_page_caption":"ACCUEIL",
    "general":{  
-      "name":"samii Fakhfakh",
+      "name":"sami Fakhfakh",
       "photo":"/static/cv_parser/images/image.jpg",
       "caption":"Informations génerales",
       "title":"ETUDIANT INGENIEUR EN INFORMATIQUE",
@@ -35,19 +35,19 @@
       "phone":"+33 06 11 79 49 55"
    },
    "cv":{  
-      "link":"samifakhfakh.pdf",
+      "link":"samifakhfakh_fr.pdf",
       "caption":"Telecharger CV"
    },
    "contact":{  
       "adress":"2 Rue saint exupéry, Meudon la Forêt (92360) France",
       "mail":"contact@sami-fakhfakh.com",
-      "caption":"Contactez-moi",
+      "caption":"Contact",
       "send_caption":"Contactez-moi",
       "kind_caption":"N'hesitez pas a me contacter"
    },
    "about":{  
       "caption":"A propos de moi",
-      "about_me":"Bonjour, je suis Sami Fakhfakh je suis actuellement etudiant en 2 eme année en ingénierie informatique . Je suis particulierement interessé par la science de l'informatique et en particulier du developpement et de la programmation, Je suis doué dans ce domaine dans lequel je passe des heures et des heures devant mon écran afin d’enrichir mes connaissances et de participer à de nombreux projets. Je me concidere comme un passioné et innovateur. Grace aux plusieurs projets que j'ai accompli , j'ai pu développer un esprit d'initiative ainsi qu'une autonomie et une facilité de travail en équipe."
+      "about_me":"Bonjour, je suis Sami Fakhfakh je suis actuellement etudiant en 3 eme année en ingénierie informatique . Je suis particulierement interessé par la science de l'informatique et en particulier du developpement et de la programmation, Je suis doué dans ce domaine dans lequel je passe des heures et des heures devant mon écran afin d’enrichir mes connaissances et de participer à de nombreux projets. Je me concidere comme un passioné et innovateur. Grace aux plusieurs projets que j'ai accompli , j'ai pu développer un esprit d'initiative ainsi qu'une autonomie et une facilité de travail en équipe."
    },
    "social_media":{  
       "caption":"Suivez-moi sur ",
@@ -151,7 +151,7 @@
                "date":"AVRIL 2019 - EN COURS",
                "title":"STAGIAIRE",
                "label":"Stage - Crystalchain - Paris",
-               "description":"En cours ."
+               "description":"Developpement d'un micro service de restitution de données pour une plateforme SaaS de traçabilité sur la blokchain \n Automatisation de taches \n Ruby on Rails \n Python \n Docker \n Aws ."
             },
             {  
                "date":"MARS 2014 - NOV 2018",
@@ -170,18 +170,18 @@
       {  
          "caption":"PROJETS",
          "list":[
-            {  
-               "date":"MAI 2019 - JUIN 2019",
-               "title":"Projet universitaire NodeJs",
-               "label":"Systéme de gestion des tâches et pense-bête ",
-               "description":"Technologies: NodeJs , Html , css , javascript"
+         	{  
+               "date":"SEPTEMBRE 2019",
+               "title":"Projet personnel Django",
+               "label":"Application django de generation de cv dynamique",
+               "description":"Technologies: Python , Django , latex"
             },  
             {  
                "date":"MAI 2019 - JUIN 2019",
                "title":"Projet universitaire NodeJs",
                "label":"Systéme de gestion des tâches et pense-bête ",
                "description":"Technologies: NodeJs , Html , css , javascript"
-            },  
+            },   
             {  
                "date":"JAN 2019",
                "title":"Projet freelance - upWork",

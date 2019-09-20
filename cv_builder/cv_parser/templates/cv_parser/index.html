@@ -12,6 +12,11 @@
     <link href="/static/cv_parser/css/aos.css" rel="stylesheet">
     <link href="/static/cv_parser/css/bootstrap.min.css" rel="stylesheet">
     <link href="/static/cv_parser/styles/main.css" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css" rel="stylesheet">
+
+
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADs8PP87PDz/Ozw8/zs8PP87PDz/Ozw8/zs8PP87PDz/Ozw8/zs8PP87PDz/Ozw8/0BERA8AAAAAQEREDwAAAAA7PDz/AAAAAAAAAABAREQPAAAAAAAAAAAAAAAAAAAAAEBERA8AAAAAAAAAADs8PP8AAAAAQEREDwAAAABAREQPOzw8/wAAAAAAAAAAAAAAAEBERA8AAAAAAAAAAAAAAAAAAAAAQEREDwAAAAA7PDz/AAAAAAAAAAAAAAAAAAAAADs8PP8AAAAAOzw8/zs8PP87PDz/Ozw8/zs8PP87PDz/Ozw8/zs8PP9AREQPOzw8/wAAAAAAAAAAAAAAAAAAAAA7PDz/QEREDwAAAAAAAAAAAAAAAAAAAABAREQPAAAAAAAAAAAAAAAAAAAAADs8PP8AAAAAAAAAAAAAAAAAAAAAOzw8/wAAAAA7PDz/Ozw8/zs8PP87PDz/Ozw8/zs8PP87PDz/Ozw8/wAAAAA7PDz/QEREDwAAAABAREQPAAAAADs8PP8AAAAAAAAAAEBERA8AAAAAAAAAAAAAAAAAAAAAQEREDwAAAAAAAAAAOzw8/wAAAABAREQPAAAAAEBERA87PDz/AAAAAAAAAAAAAAAAQEREDzs8PP8AAAAAAAAAAAAAAAA7PDz/AAAAADs8PP8AAAAAAAAAAAAAAAAAAAAAOzw8/wAAAAAAAAAAAAAAAAAAAAA7PDz/AAAAAAAAAAAAAAAAOzw8/0BERA87PDz/AAAAAAAAAAAAAAAAAAAAADs8PP9AREQPAAAAAAAAAAAAAAAAAAAAADs8PP87PDz/Ozw8/wAAAAAAAAAAOzw8/wAAAAAAAAAAAAAAAAAAAAA7PDz/AAAAAEBERA8AAAAAAAAAAAAAAAAAAAAAOzw8/wAAAAAAAAAAAAAAADs8PP9AREQPAAAAAEBERA8AAAAAOzw8/wAAAAA7PDz/Ozw8/wAAAAAAAAAAOzw8/wAAAAA7PDz/AAAAAAAAAAA7PDz/AAAAAEBERA8AAAAAQEREDzs8PP8AAAAAAAAAADs8PP9AREQPAAAAADs8PP8AAAAAOzw8/0BERA8AAAAAOzw8/wAAAAAAAAAAAAAAAAAAAABAREQPOzw8/wAAAAA7PDz/AAAAAEBERA8AAAAAOzw8/wAAAAAAAAAAQEREDzs8PP8AAAAAAAAAAAAAAAAAAAAAAAAAAEBERA87PDz/Ozw8/wAAAAAAAAAAQEREDwAAAAAAAAAAAAAAAAAAAAA7PDz/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEREDzs8PP87PDz/Ozw8/zs8PP87PDz/Ozw8/zs8PP87PDz/Ozw8/0BERA8AAAAAwAMAAN/7AADf+wAA0AsAAN/7AADQCwAA3/sAAN7rAADe6wAA3xsAAN+7AADTWwAA21sAAOu7AADz+wAA+AMAAA==" rel="icon" type="image/x-icon" />
     <script>
       function houta(variable) {
           bannedKeywords = ["asba", "ommok", "nik", "zeb", "terma", "zabour","miboun","9a7ba","kahba"]
@@ -64,6 +69,14 @@
 
 
                 <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">{{ config.contact.caption }}</a></li>
+                <li class="nav-item">
+                      <div class="nav-item dropdown" id="banane">
+                            <a class="nav-link dropdown-toggle" href="" id="dropdown09" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="flag-icon flag-icon-{{ language_code }}"> </span>{{ language }} </a>
+                            <div class="dropdown-menu"  aria-labelledby="dropdown09">
+                                <a class="dropdown-item" href="{{ languages.link }}"><span class="flag-icon flag-icon-{{ languages.code }}"> </span>  {{ languages.language }}</a>
+                            </div>
+                        </div>
+                      </li>
               </ul>
             </div>
           </div>
@@ -81,6 +94,11 @@
           <div class="cc-profile-image"><a href="#"><img src="{{config.general.photo}}" alt="Image"/></a></div>
           <div class="h2 title">{{ config.general.name }}</div>
           <p class="category text-white">{{ config.general.title }}</p><a class="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">{{ config.contact.caption }}</a><a class="btn btn-primary" href="/static/cv_parser/{{ config.cv.link }}" target="_blank" data-aos="zoom-in" data-aos-anchor="data-aos-anchor" download="{{ config.cv.link }}">{{ config.cv.caption }}</a>
+
+
+
+
+
         </div>
       </div>
       <div class="section">

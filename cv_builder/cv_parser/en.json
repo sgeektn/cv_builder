@@ -1,0 +1,242 @@
+{  
+   "lang":"fr",
+   "home_page_caption":"HOME",
+   "general":{  
+      "name":"sami Fakhfakh",
+      "photo":"/static/cv_parser/images/image.jpg",
+      "caption":"General informations",
+      "title":"Engineering computer Science student",
+      "website":"sami-fakhfakh.Com",
+      "languages":[  
+         {  
+            "language":"French",
+            "level":"Bilingual DELF B2",
+            "rate":"90%"
+         },
+         {  
+            "language":"English",
+            "level":"TOEIC",
+            "rate":"80%"
+         },
+         {  
+            "language":"Arabic",
+            "level":"Bilingual",
+            "rate":"90%"
+         }
+      ],
+      "language_caption":"LANGUAGES",
+      "mail_caption":"Email",
+      "website_caption":"WEBSITE",
+      "age_caption":"AGE",
+      "age":"23",
+      "date_of_birth":"09/11/1995",
+      "place_of_birth":"In Lyon",
+      "adress_caption":"Adress",
+      "phone":"+33 06 11 79 49 55"
+   },
+   "cv":{  
+      "link":"samifakhfakh_en.pdf",
+      "caption":"Download CV"
+   },
+   "contact":{  
+      "adress":"2 Rue saint exupéry, Meudon la Forêt (92360) France",
+      "mail":"contact@sami-fakhfakh.com",
+      "caption":"Contact",
+      "send_caption":"Contact-me",
+      "kind_caption":"Do not hesitate to contact me"
+   },
+   "about":{  
+      "caption":"About me",
+      "about_me":"Hello, I am Sami Fakhfakh I am currently studying in 3 rd year in computer engineering class. I am particularly interested in the science of computer science and especially in development and programming, I am good at this field in which I spend hours and hours in front of my screen to enrich my knowledge and to participate in many projects. I consider myself a passionate and innovative. Thanks to the many projects that I accomplished, I was able to develop a spirit of initiative as well as an autonomy and an ease of work in team."
+   },
+   "social_media":{  
+      "caption":"Follow me in ",
+      "facebook":"https://www.facebook.com/fakhfakh.sami",
+      "github":"https://github.com/sgeektn",
+      "linkedin":"https://www.linkedin.com/in/sami-fakhfakh-49a914b4/",
+      "instagram":"https://www.instagram.com/sgeek/"
+   },
+   "skills":{  
+      "caption":"Skills",
+      "list":[  
+         {  
+            "skill":"Java",
+            "rate":"80%"
+         },
+         {  
+            "skill":"Linux",
+            "rate":"90%"
+         },
+         {  
+            "skill":"Python",
+            "rate":"70%"
+         },
+         {  
+            "skill":"Ruby",
+            "rate":"60%"
+         },
+         {  
+            "skill":"C,C++",
+            "rate":"60%"
+         },
+         {  
+            "skill":"Php",
+            "rate":"60%"
+         },
+         {  
+            "skill":"Sql",
+            "rate":"90%"
+         },
+         {  
+            "skill":"Javascript",
+            "rate":"70%"
+         },
+         {  
+            "skill":"Docker",
+            "rate":"50%"
+         },
+         {  
+            "skill":"Aws",
+            "rate":"50%"
+         }
+      ]
+   },
+   "certification":{  
+      "caption":"Certifications",
+      "list":[  
+         {  
+            "institution":"Oracle",
+            "title":"Java",
+            "description":"1z0-808",
+            "image":"static/cv_parser/images/project-1.jpg",
+            "date":"April 2017"
+         },
+         {  
+            "institution":"Linux Professional Institute",
+            "title":"Linux Essentials",
+            "description":"010-510",
+            "image":"static/cv_parser/images/project-3.jpg",
+            "date":"January 2017"
+         }
+      ]
+   },
+   "sections":[  
+      {  
+         "caption":"EDUCATION",
+         "list":[ 
+            {  
+               "date":"2017 - Today",
+               "title":"Engineering computer Science student",
+               "label":"Institute of Science and Technology of Yvelines - France",
+               "description":"Engineering of Technological Architectures of Information and Communication."
+            },
+            {  
+               "date":"2014 - 2017",
+               "title":"Bachelor's degree in computer science",
+               "label":"Faculty of Sciences of Sfax - Tunisia",
+               "description":"Bachelor's degree in computer science"
+            },
+            {  
+               "date":"2014",
+               "title":"BACHELOR",
+               "label":"High school Habib Thameur Sfax - Tunisia",
+               "description":"Bachelor of Computer Science"
+            }
+         ]
+      },
+      {  
+         "caption":"EXPERIENCE",
+         "list":[  
+             {  
+               "date":"APRIL 2019 - TODAY",
+               "title":"TRAINEE",
+               "label":"INTERSHIP - Crystalchain - Paris",
+               "description":"Development of a data recovery micro service for a SaaS traceability platform on the blokchain \n Automation of tasks \n - Ruby on Rails \n - Python \n - Docker \n - Aws."
+            },
+            {  
+               "date":"MARCH 2014 - NOV 2018",
+               "title":"Freelance",
+               "label":"Freelance in upwork",
+               "description":"Having free time and thirsty to know I started freelancing when I got my bachelor degree, this experience allowed me to acquire new practical skills."
+            },
+            {  
+               "date":"FEB 2017 - MAY 2017",
+               "title":"TRAINEE",
+               "label":"INTERSHIP - NextPlus - Sfax",
+               "description":"During this internship I was able to create an appplication in Java of detection and recognition of vehicle registration plates in real time. \n- Java \n- Python \n- OpenCv"
+            }
+         ]
+      },
+      {  
+         "caption":"PROJECTS",
+         "list":[
+            {  
+               "date":"SEPTEMBER 2019",
+               "title":"Personnal project Django",
+               "label":"Django dynamic CV generation application",
+               "description":"Technologies: Python , Django , latex"
+            },  
+            {  
+               "date":"MAY 2019 - JUN 2019",
+               "title":"Academic project NodeJs",
+               "label":"Task  and Post-it Management System",
+               "description":"Technologies: NodeJs , Html , css , javascript"
+            },   
+            {  
+               "date":"JAN 2019",
+               "title":"Freelance project - upWork",
+               "label":"Implementation of a script of automatic technical and fundamental analysis  (Scrapping) , decision and simulation of binary options.",
+               "description":"Technologies: Python , Django , Selenium , plotly"
+            },     
+            {  
+               "date":"JUN 2018 - AUG 2018",
+               "title":"Academic project Java",
+               "label":"Implementation of dominos and triominos game",
+               "description":"Technologies : Java/Swing ."
+            },    
+            {  
+               "date":"JUN 2018 - AUG 2018",
+               "title":"Academic project C",
+               "label":"Implementation of a mini LINUX file system",
+               "description":"- Implementation of FS in a virtual hard drive.\n- Implementation of shell commands to exploit the FS [C]."
+            },             
+            {  
+               "date":"NOV 2017 - DEC 2017",
+               "title":"Academic project C",
+               "label":"Implementation of dominos and triominos game.",
+               "description":"Technologies: C , sdl"
+            },             
+            {  
+               "date":"SEP 2017",
+               "title":"Academic project C",
+               "label":"Implementation of tarot game .",
+               "description":"Technologies: C , sdl"
+            },                    
+            {  
+               "date":"FEB 2017 - JUN 2017",
+               "title":"Intership project Java",
+               "label":"Java desktop application for vehicle detection with license plate recognition.",
+               "description":"Technologies: Java, Python, OpenCV, OCR, Machine Learning . "
+            },
+            {  
+               "date":"JAN 2017 - FEB 2017",
+               "title":"Freelance project - upWork",
+               "label":"Applications (Web, Desktop and Mobile) for the management of reservations and ridesharing offers.",
+               "description":"Technologies: Java/Swing, J2EE EJB , Hibernate , Maven , JSP , REST API, MySQL, Git, Python, OCR"
+            },    
+            {  
+               "date":"OCT 2015 - DEC 2015",
+               "title":"Academic project Java/SOAP",
+               "label":"Bank account management application",
+               "description":"Exposing SOAP webservices and their consumption from a Java-based desktop application for managing bank accounts ."
+            },
+            {  
+               "date":"OCT 2014 - DEC 2014",
+               "title":"Academic project C",
+               "label":"Implementation of Mastermind game",
+               "description":"Mastermind game on the C console as part of an academic project."
+            }
+         ]
+      }
+   ]
+}
