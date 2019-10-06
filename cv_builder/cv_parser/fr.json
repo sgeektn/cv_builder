@@ -47,7 +47,7 @@
    },
    "about":{  
       "caption":"A propos de moi",
-      "about_me":"Bonjour, je suis Sami Fakhfakh je suis actuellement etudiant en 3 eme année en ingénierie informatique . Je suis particulierement interessé par la science de l'informatique et en particulier du developpement et de la programmation, Je suis doué dans ce domaine dans lequel je passe des heures et des heures devant mon écran afin d’enrichir mes connaissances et de participer à de nombreux projets. Je me concidere comme un passioné et innovateur. Grace aux plusieurs projets que j'ai accompli , j'ai pu développer un esprit d'initiative ainsi qu'une autonomie et une facilité de travail en équipe."
+      "about_me":"Bonjour, je suis Sami Fakhfakh je suis actuellement etudiant en 3 eme année en ingénierie informatique en contrat de professionalisation chez BPCE services financiers. Je suis particulierement interessé par la science de l'informatique et en particulier du developpement et de la programmation, Je suis doué dans ce domaine dans lequel je passe des heures et des heures devant mon écran afin d’enrichir mes connaissances et de participer à de nombreux projets. Je me concidere comme un passioné et innovateur. Grace aux plusieurs projets que j'ai accompli , j'ai pu développer un esprit d'initiative ainsi qu'une autonomie et une facilité de travail en équipe."
    },
    "social_media":{  
       "caption":"Suivez-moi sur ",
@@ -147,8 +147,14 @@
       {  
          "caption":"EXPERIENCE",
          "list":[  
-             {  
-               "date":"AVRIL 2019 - EN COURS",
+            {  
+               "date":"SEPTEMBRE 2019 - EN COURS",
+               "title":"ALTERNANT",
+               "label":"Contrat de professionalisation - BPCE SERVICES FINANCIERS - Paris",
+               "description":"En cours ."
+            },
+            {  
+               "date":"AVRIL 2019 - AOUT 2019",
                "title":"STAGIAIRE",
                "label":"Stage - Crystalchain - Paris",
                "description":"Developpement d'un micro service de restitution de données pour une plateforme SaaS de traçabilité sur la blokchain \n Automatisation de taches \n Ruby on Rails \n Python \n Docker \n Aws ."
@@ -171,6 +177,12 @@
          "caption":"PROJETS",
          "list":[
          	{  
+               "date":"OCTOBTRE 2019",
+               "title":"Projet personnel Python",
+               "label":"Script d'emailing en python d'envoie de mail en masse",
+               "description":"Technologies: Python , Smtp"
+            },  
+            {  
                "date":"SEPTEMBRE 2019",
                "title":"Projet personnel Django",
                "label":"Application django de generation de cv dynamique",
