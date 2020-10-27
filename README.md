@@ -5,3 +5,8 @@ change the file
 cvBuilder/cv_builder/cv_parser/fr.json 
 
 admin panel will be added later
+
+# Requirements
+
+install requirements.txt with pip
+install pdflatex

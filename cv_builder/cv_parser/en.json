@@ -5,7 +5,7 @@
       "name":"sami Fakhfakh",
       "photo":"/static/cv_parser/images/image.jpg",
       "caption":"General informations",
-      "title":"Engineering computer Science student",
+      "title":"Computer engineer",
       "website":"sami-fakhfakh.Com",
       "languages":[  
          {  
@@ -47,7 +47,7 @@
    },
    "about":{  
       "caption":"About me",
-      "about_me":"Hello, I am Sami Fakhfakh I am currently studying in 3 rd year in computer engineering class in apprenticeship with BPCE financial services. I am particularly interested in the science of computer science and especially in development and programming, I am good at this field in which I spend hours and hours in front of my screen to enrich my knowledge and to participate in many projects. I consider myself a passionate and innovative. Thanks to the many projects that I accomplished, I was able to develop a spirit of initiative as well as an autonomy and an ease of work in team."
+      "about_me":"Hello, I am Sami Fakhfakh I am ccomputer engineer. I am particularly interested in the science of computer science and especially in development and programming, I am good at this field in which I spend hours and hours in front of my screen to enrich my knowledge and to participate in many projects. I consider myself a passionate and innovative. Thanks to the many projects that I accomplished, I was able to develop a spirit of initiative as well as an autonomy and an ease of work in team."
    },
    "social_media":{  
       "caption":"Follow me in ",
@@ -125,7 +125,7 @@
          "caption":"EDUCATION",
          "list":[ 
             {  
-               "date":"2017 - Today",
+               "date":"2017 - 2020",
                "title":"Engineering computer Science student",
                "label":"Institute of Science and Technology of Yvelines - France",
                "description":"Engineering of Technological Architectures of Information and Communication."
@@ -148,10 +148,10 @@
          "caption":"EXPERIENCE",
          "list":[  
              {  
-               "date":"SEPTEMBRE 2019 - TODAY",
+               "date":"SEPTEMBER 2019 - SEPTEMBER 2020",
                "title":"APPRENTICE",
                "label":"Apprenticeship contract - BPCE FINANCIAL SERVICES - Paris",
-               "description":"En cours ."
+               "description":"SUMMIT developper ."
             },
              {  
                "date":"APRIL 2019 - AUG 2019",

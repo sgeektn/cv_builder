@@ -5,7 +5,7 @@
       "name":"sami Fakhfakh",
       "photo":"/static/cv_parser/images/image.jpg",
       "caption":"Informations génerales",
-      "title":"ETUDIANT INGENIEUR EN INFORMATIQUE",
+      "title":"INGENIEUR EN INFORMATIQUE",
       "website":"sami-fakhfakh.Com",
       "languages":[  
          {  
@@ -47,7 +47,7 @@
    },
    "about":{  
       "caption":"A propos de moi",
-      "about_me":"Bonjour, je suis Sami Fakhfakh je suis actuellement etudiant en 3 eme année en ingénierie informatique en contrat de professionalisation chez BPCE services financiers. Je suis particulierement interessé par la science de l'informatique et en particulier du developpement et de la programmation, Je suis doué dans ce domaine dans lequel je passe des heures et des heures devant mon écran afin d’enrichir mes connaissances et de participer à de nombreux projets. Je me concidere comme un passioné et innovateur. Grace aux plusieurs projets que j'ai accompli , j'ai pu développer un esprit d'initiative ainsi qu'une autonomie et une facilité de travail en équipe."
+      "about_me":"Bonjour, je suis Sami Fakhfakh je suis ingénieur informatique. Je suis particulierement interessé par la science de l'informatique et en particulier du developpement et de la programmation, Je suis doué dans ce domaine dans lequel je passe des heures et des heures devant mon écran afin d’enrichir mes connaissances et de participer à de nombreux projets. Je me concidere comme un passioné et innovateur. Grace aux plusieurs projets que j'ai accompli , j'ai pu développer un esprit d'initiative ainsi qu'une autonomie et une facilité de travail en équipe."
    },
    "social_media":{  
       "caption":"Suivez-moi sur ",
@@ -125,7 +125,7 @@
          "caption":"EDUCATION",
          "list":[ 
             {  
-               "date":"2017 - Aujourd'hui",
+               "date":"2017 - 2020",
                "title":"Etudiant ingenieur informatique",
                "label":"Institut des sciences et techniques des yvelines - France",
                "description":"Ingénierie des Architectures Technologiques de l'Information et de la Communication."
@@ -148,10 +148,10 @@
          "caption":"EXPERIENCE",
          "list":[  
             {  
-               "date":"SEPTEMBRE 2019 - EN COURS",
+               "date":"SEPTEMBRE 2019 - SEPTEMBRE 2020",
                "title":"ALTERNANT",
                "label":"Contrat de professionalisation - BPCE SERVICES FINANCIERS - Paris",
-               "description":"En cours ."
+               "description":"Developpeur SUMMIT ."
             },
             {  
                "date":"AVRIL 2019 - AOUT 2019",
