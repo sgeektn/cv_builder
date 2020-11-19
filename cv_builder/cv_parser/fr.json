@@ -28,7 +28,7 @@
       "mail_caption":"Email",
       "website_caption":"SITE WEB",
       "age_caption":"AGE",
-      "age":"23",
+      "age":"25",
       "date_of_birth":"09/11/1995",
       "place_of_birth":"A Lyon",
       "adress_caption":"Adresse",
@@ -176,7 +176,13 @@
       {  
          "caption":"PROJETS",
          "list":[
-         	{  
+            {  
+               "date":"MARS 2020",
+               "title":"Site d'emails jetables",
+               "label":"Un site qui permet de fournir des adresses mail jetables",
+               "description":"Technologies: Python , Django , "
+            },  
+            {  
                "date":"OCTOBTRE 2019",
                "title":"Projet personnel Python",
                "label":"Script d'emailing en python d'envoie de mail en masse",
