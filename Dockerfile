@@ -20,7 +20,7 @@ COPY requirements.txt ./
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY cv_builder .
+VOLUME cv_builder .
 
 EXPOSE 8000
 

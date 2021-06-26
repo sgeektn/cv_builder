@@ -1,6 +1,7 @@
 curl http://localhost:8000/
 curl http://localhost:8000/FR
 curl http://localhost:8000/EN
+sleep 20
 httrack http://127.0.0.1:8000/  -O "localversion/cv"  -%v 
 cv_fr=$(find localversion/cv/127.0.0.1_8000 -name "*_fr.html")
 rm -rf $cv_fr
