@@ -20,7 +20,7 @@ COPY requirements.txt ./
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-VOLUME cv_builder .
+VOLUME cv_builder /usr/src/app
 
 EXPOSE 8000
 
