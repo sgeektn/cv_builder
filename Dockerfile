@@ -21,8 +21,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY cv_builder .
 
-CMD [ "ls" ]
-
-CMD [ "pwd" ]
+EXPOSE 8000
 
 CMD [ "python", "manage.py", "runserver" ]
