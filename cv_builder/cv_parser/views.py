@@ -41,7 +41,7 @@ def index(request,lang="FR"):
 
 	#if json_cache["adress"] != hash_of_adress:
 
-	cmap = CenterMap(address=json_config["contact"]["adress"],zoom=15, key="AIzaSyCKM9tkv_Rc9fMhuwLhwNwvW8C9Y6hNuNg=")
+	cmap = CenterMap(address=json_config["contact"]["adress"],zoom=15, key="AIzaSyCKM9tkv_Rc9fMhuwLhwNwvW8C9Y6hNuNg")
 	requ = req.Request(cmap.generate_url())
 	pic = req.urlopen(requ)
 
