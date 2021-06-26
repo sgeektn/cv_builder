@@ -1,6 +1,3 @@
-
-python3 manage.py runserver &
-sleep 10
 curl http://localhost:8000/
 curl http://localhost:8000/FR
 curl http://localhost:8000/EN

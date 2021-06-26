@@ -52,10 +52,11 @@ def index(request,lang="FR"):
 	
 	hash_of_config = json.dumps(json_config, sort_keys = True).encode("utf-8")
 	hash_of_config = hashlib.md5(hash_of_config).hexdigest()
-
+	print(json_cache[lang.lower()+"_pdf_hash"])
+	print(hash_of_config)
 	if json_cache[lang.lower()+"_pdf_hash"] != hash_of_config:
 		template.create_template(json_config)
-		
+		print("new json")
 		json_cache[lang.lower()+"_pdf_hash"] = hash_of_config
 		with open("cv_parser/cache.json","w") as cache_file:
 			json.dump(json_cache, cache_file)
