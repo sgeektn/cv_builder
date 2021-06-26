@@ -8,10 +8,10 @@ RUN apt-get update \
   && ln -s /usr/bin/python3 python \
   && pip3 install --upgrade pip \
   && apt-get install -y httrack \
-  && apt-get install texlive-latex-base \
-  && apt-get install texlive-fonts-recommended \
-  && apt-get install texlive-fonts-extra \
-  && apt-get install texlive-latex-extra
+  && apt-get install -y texlive-latex-base \
+  && apt-get install -y texlive-fonts-recommended \
+  && apt-get install -y texlive-fonts-extra \
+  && apt-get install -y texlive-latex-extra
 
 WORKDIR /usr/src/app
 
