@@ -1,6 +1,6 @@
 import json
 import os
-
+import subprocess
 
 def create_template(config):
 	
@@ -74,8 +74,8 @@ def create_template(config):
 		debug.write(config["general"]["photo"]+"\n")
 		debug.write(". "+os.path.dirname(os.path.realpath(__file__))+"/compile.sh "+config["general"]["photo"]+" "+config["cv"]["link"])
 		debug.close()
-	os.system(". "+os.path.dirname(os.path.realpath(__file__))+"/compile.sh "+config["general"]["photo"]+" "+config["cv"]["link"])
-
+	#os.system(". "+os.path.dirname(os.path.realpath(__file__))+"/compile.sh "+config["general"]["photo"]+" "+config["cv"]["link"])
+	subprocess.call([".",os.path.dirname(os.path.realpath(__file__))+"/compile.sh",config["general"]["photo"],config["cv"]["link"]])
 if __name__ == '__main__':
 	with open("../fr.json","r") as file_config:
 		create_template(json.loads(file_config.read()))

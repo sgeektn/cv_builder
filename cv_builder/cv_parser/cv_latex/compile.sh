@@ -10,4 +10,4 @@ rm template_auto.run.xml
 rm template_auto.bcf
 rm page1sidebar.aux
 mv template_auto.pdf "../static/cv_parser/"$2
-rm "image.jpg"
+rm "image.jpg" 
