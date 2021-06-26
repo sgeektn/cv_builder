@@ -1,4 +1,5 @@
 cd $(pwd)"/cv_parser/cv_latex"
+echo "photo"
 echo $1
 cp ".."$1 $(pwd)"/image.jpg"
 echo "cp .."$1 $(pwd)"/image.jpg zeb"

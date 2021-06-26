@@ -71,7 +71,8 @@ def create_template(config):
 
 	with open("debug.txt","w") as debug:
 		debug.write("Photo in json\n")
-		debug.write(config["general"]["photo"])
+		debug.write(config["general"]["photo"]+"\n")
+		debug.write(". "+os.path.dirname(os.path.realpath(__file__))+"/compile.sh "+config["general"]["photo"]+" "+config["cv"]["link"])
 		debug.close()
 	os.system(". "+os.path.dirname(os.path.realpath(__file__))+"/compile.sh "+config["general"]["photo"]+" "+config["cv"]["link"])
 
