@@ -8,10 +8,7 @@ RUN apt-get update \
   && ln -s /usr/bin/python3 python \
   && pip3 install --upgrade pip \
   && apt-get install -y httrack curl \
-  && apt-get install -y texlive-latex-base \
-  && apt-get install -y texlive-fonts-recommended \
-  && apt-get install -y texlive-fonts-extra \
-  && apt-get install -y texlive-latex-extra biber collection-bibtexextra
+  && apt-get install -y texmaker
 
 WORKDIR /usr/src/app
 
