@@ -69,7 +69,8 @@ def create_template(config):
 		template.write("\\end{document}\n")			
 		template.close()
 
-
+	print("Photo in json")
+	print(config["general"]["photo"])
 	os.system(". "+os.path.dirname(os.path.realpath(__file__))+"/compile.sh "+config["general"]["photo"]+" "+config["cv"]["link"])
 
 if __name__ == '__main__':
