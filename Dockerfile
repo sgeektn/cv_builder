@@ -21,8 +21,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-CMD [ "ls" ]
-
-CMD [ "pwd" ]
 
 CMD [ "python", "manage.py", "runserver" ]
