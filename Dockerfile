@@ -13,11 +13,13 @@ RUN apt-get update \
   && apt-get install -y texlive-fonts-extra \
   && apt-get install -y texlive-latex-extra
 
+WORKDIR /usr/src/app
+
 COPY requirements.txt ./
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY . .
+COPY cv_builder .
 
 CMD [ "ls" ]
 
