@@ -1,5 +1,5 @@
 {  
-   "lang":"fr",
+   "lang":"en",
    "home_page_caption":"HOME",
    "general":{  
       "name":"sami Fakhfakh",
@@ -147,6 +147,12 @@
       {  
          "caption":"EXPERIENCE",
          "list":[  
+            {  
+               "date":"NOVEMBER 2020 - TODAY",
+               "title":"DEVELOPMENT ENGINEER",
+               "label":"Development engineer - Crystalchain - Paris",
+               "description":"Development engineer on a traceability platform on the blokchain."
+            },            
              {  
                "date":"SEPTEMBER 2019 - SEPTEMBER 2020",
                "title":"APPRENTICE",
