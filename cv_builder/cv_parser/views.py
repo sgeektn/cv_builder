@@ -40,18 +40,20 @@ def index(request,lang="FR"):
 	#hash_of_adress = hashlib.md5(hash_of_adress).hexdigest()
 
 	#if json_cache["adress"] != hash_of_adress:
-
-	cmap = CenterMap(address=json_config["contact"]["adress"],zoom=15, key="AIzaSyCKM9tkv_Rc9fMhuwLhwNwvW8C9Y6hNuNg")
-	requ = req.Request(cmap.generate_url())
-	pic = req.urlopen(requ)
-
-	filePath = 'cv_parser/static/cv_parser/images/static_map.png'
-	with open(filePath, 'wb') as localFile:
-		localFile.write(pic.read())
-		#json_cache["adress"] = hash_of_adress
-		#with open("cv_parser/cache.json","w") as cache_file:
-		#	json.dump(json_cache, cache_file)
-		#	cache_file.close()
+	try:
+		cmap = CenterMap(address=json_config["contact"]["adress"],zoom=15, key="AIzaSyCKM9tkv_Rc9fMhuwLhwNwvW8C9Y6hNuNg=")
+		requ = req.Request(cmap.generate_url())
+		pic = req.urlopen(requ)
+	
+		filePath = 'cv_parser/static/cv_parser/images/static_map.png'
+		with open(filePath, 'wb') as localFile:
+			localFile.write(pic.read())
+			#json_cache["adress"] = hash_of_adress
+			#with open("cv_parser/cache.json","w") as cache_file:
+			#	json.dump(json_cache, cache_file)
+			#	cache_file.close()
+	except:
+		print("Error getting map image , put it manually in cv_parser/static/cv_parser/images/static_map.png")
 
 	
 	#hash_of_config = json.dumps(json_config, sort_keys = True).encode("utf-8")
