@@ -11,7 +11,7 @@ RUN apt-get update \
   && apt-get install -y texlive-latex-base \
   && apt-get install -y texlive-fonts-recommended \
   && apt-get install -y texlive-fonts-extra \
-  && apt-get install -y texlive-latex-extra
+  && apt-get install -y texlive-latex-extra biber collection-bibtexextra
 
 WORKDIR /usr/src/app
 
