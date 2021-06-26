@@ -1,6 +1,5 @@
 cd $(pwd)"/cv_parser/cv_latex"
-echo $(pwd)
-echo $(ls)
+echo $1
 cp ".."$1 $(pwd)"/image.jpg"
 echo "cp .."$1 $(pwd)"/image.jpg zeb"
 pdflatex --no-shell-escape template_auto.tex 
