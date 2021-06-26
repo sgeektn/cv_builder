@@ -6,9 +6,13 @@ from urllib import request as req
 import hashlib
 import sys
 import os
+import logging
 sys.path.insert(0, os.path.dirname(os.path.realpath(__file__)))
 from cv_latex import template
 # Create your views here.
+
+logger = logging.getLogger(__name__)
+
 def index(request,lang="FR"):
 	#template = loader.get_template('cv_parser/index.html')
 	language="Français"
@@ -52,11 +56,11 @@ def index(request,lang="FR"):
 	
 	hash_of_config = json.dumps(json_config, sort_keys = True).encode("utf-8")
 	hash_of_config = hashlib.md5(hash_of_config).hexdigest()
-	print(json_cache[lang.lower()+"_pdf_hash"])
-	print(hash_of_config)
+	logger.info(json_cache[lang.lower()+"_pdf_hash"])
+	logger.info(hash_of_config)
 	if json_cache[lang.lower()+"_pdf_hash"] != hash_of_config:
 		template.create_template(json_config)
-		print("new json")
+		logger.info("new json")
 		json_cache[lang.lower()+"_pdf_hash"] = hash_of_config
 		with open("cv_parser/cache.json","w") as cache_file:
 			json.dump(json_cache, cache_file)
