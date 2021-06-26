@@ -1,0 +1,1 @@
+sudo docker build . --tag "cv_builder" --no-cache
