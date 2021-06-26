@@ -1,1 +1,1 @@
-sudo docker build . --tag "cv_builder"
+sudo docker build . --tag "cv_builder" 
