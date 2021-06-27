@@ -1,2 +1,5 @@
 docker exec cv_builder /bin/bash local.sh
-docker cp cv_builder:cv_builder/localversion.tar.gz .
+mkdir results
+chmod 777 results
+docker cp cv_builder:/usr/src/app/localversion.tar.gz results
+
