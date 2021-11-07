@@ -61,11 +61,11 @@
       "list":[  
          {  
             "skill":"Java",
-            "rate":"80%"
+            "rate":"40%"
          },
          {  
             "skill":"Linux",
-            "rate":"90%"
+            "rate":"80%"
          },
          {  
             "skill":"Python",
@@ -182,6 +182,12 @@
       {  
          "caption":"PROJETS",
          "list":[
+            {  
+               "date":"JUILLET 2021",
+               "title":"Bot de notifications coinmarketcap.com via telegram",
+               "label":"Un robot qui permet de consuler son portfolio coinmarketcap et d'alerter via telegram avec des flags configurés a l'avance",
+               "description":"Technologies: Python"
+            },            
             {  
                "date":"MARS 2020",
                "title":"Site d'emails jetables",

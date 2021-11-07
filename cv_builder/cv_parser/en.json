@@ -61,11 +61,11 @@
       "list":[  
          {  
             "skill":"Java",
-            "rate":"80%"
+            "rate":"40%"
          },
          {  
             "skill":"Linux",
-            "rate":"90%"
+            "rate":"80%"
          },
          {  
             "skill":"Python",
@@ -182,6 +182,12 @@
       {  
          "caption":"PROJECTS",
          "list":[
+            {  
+               "date":"JULY 2021",
+               "title":"Telegram notification bot for coinmarketcap.com",
+               "label":"A bot that notify via telegram when flags are trigered on coinmarketcap portfolio",
+               "description":"Technologies: Python"
+            },    
             {  
                "date":"MARCH 2020",
                "title":"Disposable mail website",
