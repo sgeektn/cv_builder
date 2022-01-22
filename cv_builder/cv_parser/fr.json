@@ -3,7 +3,7 @@
    "home_page_caption":"ACCUEIL",
    "general":{  
       "name":"sami Fakhfakh",
-      "photo":"/static/cv_parser/images/image.jpg",
+      "photo":"/static/cv_parser/images/image.png",
       "caption":"Informations génerales",
       "title":"INGENIEUR EN INFORMATIQUE",
       "website":"sami-fakhfakh.Com",
@@ -28,7 +28,7 @@
       "mail_caption":"Email",
       "website_caption":"SITE WEB",
       "age_caption":"AGE",
-      "age":"25",
+      "age":"26",
       "date_of_birth":"09/11/1995",
       "place_of_birth":"A Lyon",
       "adress_caption":"Adresse",
@@ -54,15 +54,11 @@
       "facebook":"https://www.facebook.com/fakhfakh.sami",
       "github":"https://github.com/sgeektn",
       "linkedin":"https://www.linkedin.com/in/sami-fakhfakh-49a914b4/",
-      "instagram":"https://www.instagram.com/sgeek/"
+      "instagram":"https://www.instagram.com/sami_fakhfakh/"
    },
    "skills":{  
       "caption":"Compétences",
       "list":[  
-         {  
-            "skill":"Java",
-            "rate":"40%"
-         },
          {  
             "skill":"Linux",
             "rate":"80%"
@@ -80,24 +76,8 @@
             "rate":"60%"
          },
          {  
-            "skill":"Php",
-            "rate":"60%"
-         },
-         {  
             "skill":"Sql",
-            "rate":"90%"
-         },
-         {  
-            "skill":"Javascript",
             "rate":"70%"
-         },
-         {  
-            "skill":"Docker",
-            "rate":"50%"
-         },
-         {  
-            "skill":"Aws",
-            "rate":"50%"
          }
       ]
    },
@@ -121,29 +101,6 @@
       ]
    },
    "sections":[  
-      {  
-         "caption":"EDUCATION",
-         "list":[ 
-            {  
-               "date":"2017 - 2020",
-               "title":"Etudiant ingenieur informatique",
-               "label":"Institut des sciences et techniques des yvelines - France",
-               "description":"Ingénierie des Architectures Technologiques de l'Information et de la Communication."
-            },
-            {  
-               "date":"2014 - 2017",
-               "title":"Licence fondamentale en informatique",
-               "label":"Faculté des sciences de Sfax - Tunisie",
-               "description":"Licence fondamentale en informatique"
-            },
-            {  
-               "date":"2014",
-               "title":"BACCALAURÉAT",
-               "label":"Lycée Habib Thameur Sfax - Tunisie",
-               "description":"baccalauréat sciences informatiques Mention Bien"
-            }
-         ]
-      },
       {  
          "caption":"EXPERIENCE",
          "list":[  
@@ -176,6 +133,29 @@
                "title":"STAGIAIRE",
                "label":"Stage de fin d’etudes - NextPlus - Sfax",
                "description":"Durant ce stage j'ai pu creer une appplication en Java de détéction et de reconnaisance des plaques d'immatriculation des vehicules en temps réel.\n- Java\n- Python\n- OpenCv"
+            }
+         ]
+      },
+      {  
+         "caption":"EDUCATION",
+         "list":[ 
+            {  
+               "date":"2017 - 2020",
+               "title":"Etudiant ingenieur informatique",
+               "label":"Institut des sciences et techniques des yvelines - France",
+               "description":"Ingénierie des Architectures Technologiques de l'Information et de la Communication."
+            },
+            {  
+               "date":"2014 - 2017",
+               "title":"Licence fondamentale en informatique",
+               "label":"Faculté des sciences de Sfax - Tunisie",
+               "description":"Licence fondamentale en informatique"
+            },
+            {  
+               "date":"2014",
+               "title":"BACCALAURÉAT",
+               "label":"Lycée Habib Thameur Sfax - Tunisie",
+               "description":"baccalauréat sciences informatiques Mention Bien"
             }
          ]
       },

@@ -3,7 +3,7 @@
    "home_page_caption":"HOME",
    "general":{  
       "name":"sami Fakhfakh",
-      "photo":"/static/cv_parser/images/image.jpg",
+      "photo":"/static/cv_parser/images/image.png",
       "caption":"General informations",
       "title":"Computer engineer",
       "website":"sami-fakhfakh.Com",
@@ -28,7 +28,7 @@
       "mail_caption":"Email",
       "website_caption":"WEBSITE",
       "age_caption":"AGE",
-      "age":"25",
+      "age":"26",
       "date_of_birth":"09/11/1995",
       "place_of_birth":"In Lyon",
       "adress_caption":"Adress",
@@ -47,22 +47,18 @@
    },
    "about":{  
       "caption":"About me",
-      "about_me":"Hello, I am Sami Fakhfakh I am ccomputer engineer. I am particularly interested in the science of computer science and especially in development and programming, I am good at this field in which I spend hours and hours in front of my screen to enrich my knowledge and to participate in many projects. I consider myself a passionate and innovative. Thanks to the many projects that I accomplished, I was able to develop a spirit of initiative as well as an autonomy and an ease of work in team."
+      "about_me":"Hello, I am Sami Fakhfakh I am computer engineer. I am particularly interested in the science of computer science and especially in development and programming, I am good at this field in which I spend hours and hours in front of my screen to enrich my knowledge and to participate in many projects. I consider myself a passionate and innovative. Thanks to the many projects that I accomplished, I was able to develop a spirit of initiative as well as an autonomy and an ease of work in team."
    },
    "social_media":{  
       "caption":"Follow me in ",
       "facebook":"https://www.facebook.com/fakhfakh.sami",
       "github":"https://github.com/sgeektn",
       "linkedin":"https://www.linkedin.com/in/sami-fakhfakh-49a914b4/",
-      "instagram":"https://www.instagram.com/sgeek/"
+      "instagram":"https://www.instagram.com/sami_fakhfakh/"
    },
    "skills":{  
       "caption":"Skills",
       "list":[  
-         {  
-            "skill":"Java",
-            "rate":"40%"
-         },
          {  
             "skill":"Linux",
             "rate":"80%"
@@ -80,24 +76,8 @@
             "rate":"60%"
          },
          {  
-            "skill":"Php",
-            "rate":"60%"
-         },
-         {  
             "skill":"Sql",
-            "rate":"90%"
-         },
-         {  
-            "skill":"Javascript",
             "rate":"70%"
-         },
-         {  
-            "skill":"Docker",
-            "rate":"50%"
-         },
-         {  
-            "skill":"Aws",
-            "rate":"50%"
          }
       ]
    },
@@ -120,30 +100,7 @@
          }
       ]
    },
-   "sections":[  
-      {  
-         "caption":"EDUCATION",
-         "list":[ 
-            {  
-               "date":"2017 - 2020",
-               "title":"Engineering computer Science student",
-               "label":"Institute of Science and Technology of Yvelines - France",
-               "description":"Engineering of Technological Architectures of Information and Communication."
-            },
-            {  
-               "date":"2014 - 2017",
-               "title":"Bachelor's degree in computer science",
-               "label":"Faculty of Sciences of Sfax - Tunisia",
-               "description":"Bachelor's degree in computer science"
-            },
-            {  
-               "date":"2014",
-               "title":"BACHELOR",
-               "label":"High school Habib Thameur Sfax - Tunisia",
-               "description":"Bachelor of Computer Science"
-            }
-         ]
-      },
+   "sections":[ 
       {  
          "caption":"EXPERIENCE",
          "list":[  
@@ -176,6 +133,29 @@
                "title":"TRAINEE",
                "label":"INTERSHIP - NextPlus - Sfax",
                "description":"During this internship I was able to create an appplication in Java of detection and recognition of vehicle registration plates in real time. \n- Java \n- Python \n- OpenCv"
+            }
+         ]
+      }, 
+      {  
+         "caption":"EDUCATION",
+         "list":[ 
+            {  
+               "date":"2017 - 2020",
+               "title":"Engineering computer Science student",
+               "label":"Institute of Science and Technology of Yvelines - France",
+               "description":"Engineering of Technological Architectures of Information and Communication."
+            },
+            {  
+               "date":"2014 - 2017",
+               "title":"Bachelor's degree in computer science",
+               "label":"Faculty of Sciences of Sfax - Tunisia",
+               "description":"Bachelor's degree in computer science"
+            },
+            {  
+               "date":"2014",
+               "title":"BACHELOR",
+               "label":"High school Habib Thameur Sfax - Tunisia",
+               "description":"Bachelor of Computer Science"
             }
          ]
       },

@@ -13,7 +13,7 @@ from cv_latex import template
 
 logger = logging.getLogger(__name__)
 
-def index(request,lang="FR"):
+def index(request,lang="EN"):
 	#template = loader.get_template('cv_parser/index.html')
 	language="Français"
 	language_code="fr"
