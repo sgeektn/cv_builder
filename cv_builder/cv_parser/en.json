@@ -28,7 +28,7 @@
       "mail_caption":"Email",
       "website_caption":"WEBSITE",
       "age_caption":"AGE",
-      "age":"26",
+      "age":"27",
       "date_of_birth":"09/11/1995",
       "place_of_birth":"In Lyon",
       "adress_caption":"Adress",
@@ -97,6 +97,13 @@
             "description":"010-510",
             "image":"static/cv_parser/images/project-3.jpg",
             "date":"January 2017"
+         },
+         {  
+            "institution":"Scrum.org",
+            "title":"Certified Scrum Master",
+            "description":"PSM1",
+            "image":"static/cv_parser/images/project-4.jpg",
+            "date":"July 2022"
          }
       ]
    },
@@ -177,7 +184,7 @@
             {  
                "date":"OCTOBER 2019",
                "title":"Personnel project Python",
-               "label":"Python smtp mass mailing scropt",
+               "label":"Python smtp mass mailing script",
                "description":"Technologies: Python , Smtp"
             },  
             {  

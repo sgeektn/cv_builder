@@ -28,7 +28,7 @@
       "mail_caption":"Email",
       "website_caption":"SITE WEB",
       "age_caption":"AGE",
-      "age":"26",
+      "age":"27",
       "date_of_birth":"09/11/1995",
       "place_of_birth":"A Lyon",
       "adress_caption":"Adresse",
@@ -97,6 +97,13 @@
             "description":"010-510",
             "image":"static/cv_parser/images/project-3.jpg",
             "date":"Janvier 2017"
+         },
+         {  
+            "institution":"Scrum.org",
+            "title":"Certified Scrum Master",
+            "description":"PSM1",
+            "image":"static/cv_parser/images/project-4.jpg",
+            "date":"Juillet 2022"
          }
       ]
    },
